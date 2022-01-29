@@ -1,0 +1,47 @@
+:root {
+  --font-colour: #fff;
+  --bg-colour: #1a1818;
+  --link-colour: #53da45;
+}
+
+
+html {
+  margin-top: 30px;
+  margin-left: calc(20px + 4vw);
+  margin-right: calc(20px + 4vw)
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+
+
+body {
+  background-color: var(--bg-colour);
+  color: var(--font-colour)
+
+}
+
+
+a {
+  color: var(--link-colour)
+}
+
+img {
+  height: calc(200px);
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size:3.5rem;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;;
+  font-size:2rem;
+}
