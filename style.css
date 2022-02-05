@@ -2,35 +2,67 @@
   --font-colour: #fff;
   --bg-colour: #1a1818;
   --link-colour: #53da45;
+  --hover-link-colour: #33e5ff;
+
+  --light-font-color:#222222;
+  --light-bg-color: #F2F4F4;
+  --light-link-color: #ff0000;
+
+}
+
+
+body.light-mode {
+    background-color: var(--light-bg-color);
+    color: var(--light-font-color);
+}
+
+body.light-mode a {
+    color: var(--light-link-color);
+}
+
+
+body.light-mode i {
+    color:var(--light-font-color);
 }
 
 
 html {
   margin-top: 30px;
   margin-left: calc(20px + 4vw);
-  margin-right: calc(20px + 4vw)
+  margin-right: calc(20px + 4vw);
   padding: 0;
 }
 canvas {
   display: block;
 }
 
-
+header {
+  text-align:right;
+}
 
 body {
   background-color: var(--bg-colour);
-  color: var(--font-colour)
+  color: var(--font-colour);
 
 }
 
 
 a {
-  color: var(--link-colour)
+  color: var(--link-colour);
+}
+
+a i{
+  color:var(--link-color);
+}
+
+a:hover{
+  color:var(--hover-link-colour);
 }
 
 img {
-  height: calc(200px);
+    height: calc(20vw);
 }
+
 
 p {
   font-family: "Nunito", sans-serif;
@@ -42,6 +74,21 @@ h1 {
 }
 
 h2 {
-  font-family: 'Open Sans', sans-serif;;
+  font-family: 'Open Sans', sans-serif;
   font-size:2rem;
+}
+
+i {
+  font-size:50px;
+  color:var(--font-color);
+  padding:4px;
+}
+
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
 }
