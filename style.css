@@ -92,3 +92,8 @@ button {
   overflow: hidden;
   outline: none;
 }
+
+footer {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
