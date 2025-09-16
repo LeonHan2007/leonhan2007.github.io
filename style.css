@@ -5,25 +5,26 @@
   --hover-link-colour: #33e5ff;
 
   --light-font-color:#222222;
-  --light-bg-color: #F2F4F4;
-  --light-link-color: #ff0000;
+  --light-bg-color: #ffffff;
+  --light-link-color: #d62b2b;
 
 }
 
 
 body.light-mode {
-    background-color: var(--light-bg-color);
-    color: var(--light-font-color);
+  background-color: var(--light-bg-color);
+  color: var(--light-font-color);
 }
 
 body.light-mode a {
-    color: var(--light-link-color);
+  color: var(--light-link-color);
 }
 
 
 body.light-mode i {
-    color:var(--light-font-color);
+  color:var(--light-font-color);
 }
+
 
 
 html {
@@ -52,16 +53,14 @@ a {
 }
 
 a i{
-  color:var(--link-color);
+  color:var(--link-colour);
 }
 
 a:hover{
   color:var(--hover-link-colour);
 }
 
-img {
-    height: calc(20vw);
-}
+
 
 
 p {
@@ -80,7 +79,7 @@ h2 {
 
 i {
   font-size:50px;
-  color:var(--font-color);
+  color:var(--font-colour);
   padding:4px;
 }
 
@@ -93,7 +92,65 @@ button {
   outline: none;
 }
 
+.btn {
+  display: inline-block;
+  background: transparent;
+  color: var(--link-colour);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn i {
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 footer {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
+}
+
+.projects {
+  display: block;
+  margin-top: 2rem;
+}
+
+
+img.img--misty { width: 1200px; height: auto; }
+img.img--blend { width: 800px; height: auto; }
+img.img--edge { width: 1200px; height: auto; }
+img.img--colour { width: 300px; height: auto; }
+img.img--ransac { width: 600px; height: auto; }
+
+@media (max-width: 700px) {
+  img.img--misty,
+  img.img--blend,
+  img.img--edge,
+  img.img--colour,
+  img.img--ransac {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+.project-info h2 { margin-top: 0; }
+p + img,
+p + .image-wrap,
+h2 + img,
+h2 + .image-wrap {
+  margin-top: 1rem;
+  display: block;
+}
+img, .image-wrap {
+  margin: 0.6rem 0;
 }
