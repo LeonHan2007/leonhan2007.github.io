@@ -125,7 +125,7 @@ footer {
   margin-top: 2rem;
 }
 
-
+img.img--smooth { width: 600px; height: auto; }
 img.img--misty { width: 1000px; height: auto; }
 img.img--blend { width: 600px; height: auto; }
 img.img--edge { width: 1000px; height: auto; }
