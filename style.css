@@ -125,6 +125,7 @@ footer {
   margin-top: 2rem;
 }
 
+img.img--workout { width: 600px; height: auto; }
 img.img--smooth { width: 600px; height: auto; }
 img.img--misty { width: 1000px; height: auto; }
 img.img--blend { width: 600px; height: auto; }
@@ -143,6 +144,8 @@ img.img--doodle { width: 200px; height: auto; }
   img.img--earthquake,
   img.img--balls,
   img.img--doodle,  
+  img.img--smooth,
+  img.img--workout,
   img.img--ransac {
     width: 100% !important;
     height: auto !important;
